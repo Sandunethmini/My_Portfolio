@@ -8,54 +8,54 @@ export default function Skillssection() {
   const content = {
     Skills: (
       <div>
-        <strong className="font-serif text-2xl mb-6 block">Technical Skills</strong>
+        <strong className="block mb-6 font-serif text-2xl">Technical Skills</strong>
         <div className="w-full px-2">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-6 w-full">
+          <div className="grid w-full grid-cols-1 gap-8 mt-6 sm:grid-cols-2 md:grid-cols-4">
             {[
               {
-                icon: <FaPython className="text-5xl text-yellow-300 mb-3" />,
+                icon: <FaPython className="mb-3 text-5xl text-yellow-300" />,
                 title: "Python",
                 type: "Programming",
                 desc: "Experienced in scripting, automation and data analysis."
               },
               {
-                icon: <FaJava className="text-5xl text-orange-400 mb-3" />,
+                icon: <FaJava className="mb-3 text-5xl text-orange-400" />,
                 title: "Java",
                 type: "Programming",
                 desc: "Object-oriented programming for backend and Android apps."
               },
               {
-                icon: <FaReact className="text-5xl text-cyan-400 mb-3" />,
+                icon: <FaReact className="mb-3 text-5xl text-cyan-400" />,
                 title: "React",
                 type: "Frontend",
                 desc: "Building interactive and dynamic user interfaces."
               },
               {
-                icon: <FaJs className="text-5xl text-yellow-400 mb-3" />,
+                icon: <FaJs className="mb-3 text-5xl text-yellow-400" />,
                 title: "JavaScript",
                 type: "Frontend",
                 desc: "Core scripting for web interactivity and logic."
               },
               {
-                icon: <FaHtml5 className="text-5xl text-orange-500 mb-3" />,
+                icon: <FaHtml5 className="mb-3 text-5xl text-orange-500" />,
                 title: "HTML",
                 type: "Frontend",
                 desc: "Structuring web pages with semantic markup."
               },
               {
-                icon: <FaCss3Alt className="text-5xl text-blue-400 mb-3" />,
+                icon: <FaCss3Alt className="mb-3 text-5xl text-blue-400" />,
                 title: "CSS",
                 type: "Frontend",
                 desc: "Styling and responsive design for modern UIs."
               },
               {
-                icon: <FaNodeJs className="text-5xl text-green-400 mb-3" />,
+                icon: <FaNodeJs className="mb-3 text-5xl text-green-400" />,
                 title: "Node.js",
                 type: "Backend",
                 desc: "Server-side scripting and REST API development."
               },
               {
-                icon: <FaGitAlt className="text-5xl text-orange-300 mb-3" />,
+                icon: <FaGitAlt className="mb-3 text-5xl text-orange-300" />,
                 title: "Git",
                 type: "Version Control",
                 desc: "Collaboration and code management with GitHub."
@@ -63,7 +63,7 @@ export default function Skillssection() {
             ].map((skill, idx) => (
               <motion.div
                 key={skill.title}
-                className="bg-blue-900 bg-opacity-80 rounded-xl shadow p-8 flex flex-col items-center w-full h-full"
+                className="flex flex-col items-center w-full h-full p-8 bg-blue-900 shadow bg-opacity-80 rounded-xl"
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 whileHover={{ scale: 1.07, boxShadow: "0 8px 32px 0 rgba(0,0,0,0.4)" }}
@@ -71,9 +71,9 @@ export default function Skillssection() {
                 viewport={{ once: true }}
               >
                 {skill.icon}
-                <span className="text-xl font-bold mb-2">{skill.title}</span>
-                <span className="text-sm text-blue-200 mb-2">{skill.type}</span>
-                <span className="text-base text-gray-300 text-center">{skill.desc}</span>
+                <span className="mb-2 text-xl font-bold">{skill.title}</span>
+                <span className="mb-2 text-sm text-blue-200">{skill.type}</span>
+                <span className="text-base text-center text-gray-300">{skill.desc}</span>
               </motion.div>
             ))}
           </div>
@@ -83,7 +83,7 @@ export default function Skillssection() {
 
     Education: (
       <p>
-        <strong className="font-serif text-2xl mb-6 block">Education</strong>
+        <strong className="block mb-6 font-serif text-2xl">Education</strong>
         Information Technology at the Institute of Technology,<br />
         University of Moratuwa<br />
         2023 Present<br />
@@ -93,7 +93,7 @@ export default function Skillssection() {
 
     Goals: (
       <p>
-        <strong className="font-serif text-2xl mb-6 block">Career Aspiration</strong>
+        <strong className="block mb-6 font-serif text-2xl">Career Aspiration</strong>
         To become a full-stack developer focused on user-centered design.
       </p>
     )
@@ -104,11 +104,11 @@ export default function Skillssection() {
   return (
     <section 
       id="skills" // Changed from "skills-about" to "skills"
-      className="bg-gradient-to-b from-green-900 to-blue-950 text-white p-8"
+      className="bg-[#392d69] text-white p-8"
     >
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold mb-6 text-center">Skills & Experience</h2>
-        <div className="flex justify-center space-x-4 mb-6">
+        <h2 className="mb-6 text-3xl font-bold text-center">Skills & Experience</h2>
+        <div className="flex justify-center mb-6 space-x-4">
           {tabs.map((tab) => (
             <button
               key={tab}
@@ -123,7 +123,7 @@ export default function Skillssection() {
             </button>
           ))}
         </div>
-        <div className="content mt-6">
+        <div className="mt-6 content">
           {content[activeTab]}
         </div>
       </div>

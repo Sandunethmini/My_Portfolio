@@ -29,10 +29,10 @@ export default function Projects() {
   return (
     <section 
       id="projects"
-      className="p-6 min-h-screen bg-gradient-to-b from-blue-950 to-green-900 text-white"
+      className="min-h-screen p-6 text-white bg-gradient-to-b from-blue-950 to-green-900"
     >
-      <h2 className="text-3xl font-serif font-bold mb-12 text-center">Projects</h2>
-      <div className="flex flex-col md:flex-row mb-8 gap-8 justify-center items-center">
+      <h2 className="mb-12 text-4xl font-extrabold text-center">Projects</h2>
+      <div className="flex flex-col items-center justify-center gap-8 mb-8 md:flex-row">
         {projects.map((project, index) => (
           <motion.div
             key={index}
@@ -46,20 +46,20 @@ export default function Projects() {
             <motion.img
               src={project.image}
               alt={project.title}
-              className="mb-4 w-full h-40 object-cover rounded transition-transform duration-300"
+              className="object-cover w-full h-40 mb-4 transition-transform duration-300 rounded"
               whileHover={{ scale: 1.08 }}
               transition={{ duration: 0.3 }}
             />
-            <div className="flex flex-col flex-grow items-center text-center break-words">
-              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+            <div className="flex flex-col items-center flex-grow text-center break-words">
+              <h3 className="mb-2 text-xl font-semibold">{project.title}</h3>
               <p className="mb-2 text-wrap">{project.description}</p>
-              <p className="text-sm mb-4">Tech: {project.tech}</p>
+              <p className="mb-4 text-sm">Tech: {project.tech}</p>
             </div>
             <a
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-800 text-white px-4 py-2 rounded hover:bg-black transition-colors duration-300 font-semibold mt-auto"
+              className="px-4 py-2 mt-auto font-semibold text-white transition-colors duration-300 bg-blue-800 rounded hover:bg-black"
             >
               View on GitHub
             </a>
