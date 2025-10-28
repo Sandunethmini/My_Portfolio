@@ -1,12 +1,12 @@
 const About = () => {
   return (
-    <div id="about" className="min-h-screen flex items-center justify-center relative flex items-center min-h-screen overflow-hidden bg-[radial-gradient(circle,rgba(238,174,202,1)_0%,rgba(148,187,233,1)_100%)]">
+    <div id="about" className="min-h-screen flex items-center justify-center relative flex items-center min-h-screen overflow-hidden bg-[radial-gradient(circle,rgba(238,174,202,1)_0%,rgba(148,187,233,1)_100%)] font-poppins">
       {/* Decorative Blobs */}
       <div className="absolute top-0 left-0 bg-green-400 rounded-full w-80 h-80 opacity-30 filter blur-3xl animate-pulse"></div>
       <div className="absolute bottom-0 right-0 bg-green-300 rounded-full w-96 h-96 opacity-20 filter blur-3xl animate-pulse"></div>
       <section className="relative z-10 flex flex-col items-center w-full max-w-6xl px-8 py-16 mx-4 text-gray-800 bg-white shadow-2xl bg-opacity-95 md:px-20 rounded-3xl md:flex-row gap-14">
         {/* Description Left */}
-        <div className="flex-1 text-center md:text-left">
+        <div className="flex-1 text-center">
           <h2 className="mb-6 text-5xl font-extrabold tracking-tight text-center text-transparent bg-clip-text bg-gradient-to-r from-green-900 via-green-700 to-green-500 drop-shadow-lg">
             About Me
           </h2>

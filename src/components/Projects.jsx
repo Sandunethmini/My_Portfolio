@@ -2,27 +2,41 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const projects = [
-  {
-    title: 'Task Manager App',
-    description: 'A web app for task management.',
-    tech: 'React, Node.js',
-    github: 'https://github.com/username/project-one',
-    image: 'gallery1.jpg'
+  
+    {
+    title: 'PrawnCare',
+    description: 'Developed IoT-based web and mobile Prawn Farming System with real-time water monitoring, alerts and management features to improve farm efficiency.',
+    tech: ' Next.js, Tailwind CSS, Flutter, Node.js, MySQL, ESP32 ',
+    github: 'https://github.com/anjuparanagama/prawn_care.git',
+    image: 'gallery1.jpeg'
   },
-  {
-    title: 'Portfolio Website',
-    description: 'A personal portfolio website showcasing projects, skills, and contact information.',
-    tech: 'React, TailwindCSS',
-    github: 'https://github.com/username/project-two',
-    image: 'gallery2.png'
+  
+   {
+    title: 'Multi-Calculator Suite',
+    description: ' Built a modular TypeScript app with Age, BMI and Insurance, Premium calculators, featuring complex logic, discounts and reliable input validation.',
+    tech: 'TypeScript, HTML, CSS ',
+    github: 'https://github.com/Sandunethmini/Multi-Calculator.git',
+    image: 'gallery2.jpeg'
   },
+  
   {
-    title: 'Weather App',
-    description: 'Weather app using API integration.',
-    tech: 'React, OpenWeather API',
-    github: 'https://github.com/username/project-three',
-    image: 'gallery3.jpg'
+    title: 'Library Management System',
+    description: 'Library Management System using Python',
+    tech: 'Python',
+    github: 'https://github.com/Sandunethmini/Library-Management-System-Using-Python.git',
+    image: 'gallery3.jpeg'
+  },
+  
+  {
+    title: 'Expense Tracker Web Application',
+    description: 'Built an expense tracker with dynamic categories, interactive charts, a robust Express.js backend and a responsive React frontend with real-time analytics.',
+    tech: ' React, Express.js, MySQL, Recharts, RESTful APIs',
+    github: 'https://github.com/Sandunethmini/Expense-Tracker-Web-App.git',
+    image: 'gallery4.jpeg'
   }
+
+  
+  
 ];
 
 export default function Projects() {
